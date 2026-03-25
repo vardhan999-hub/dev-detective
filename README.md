@@ -11,6 +11,7 @@ Dev Detective is a simple web app that lets you search for any GitHub user and v
 
 - **GitHub:** https://github.com/vardhan999-hub/dev-detective
 - **Live Demo:** https://dev-detective-jade.vercel.app/
+- **Demo Video:** https://drive.google.com/file/d/1GrvTUU9IcaiCJ7QM0boWRo0LiUNxu4Os/view?usp=drivesdk
 
 ---
 
