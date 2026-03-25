@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Detective</title>
+  <meta name="description" content="Search GitHub users and view their profile details and repositories." />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='20'>🔍</text></svg>">
+</head>
+<body>
+
+  <noscript>
+    <p style="text-align:center;color:red;padding:20px;">
+      This app requires JavaScript to function properly.
+    </p>
+  </noscript>
+
+  <div class="wrap">
+
+    <header>
+      <h1 class="logo"><span>//</span> Dev<span>Detective</span></h1>
+      <p class="tagline">GitHub User Search · Week 3 · Prodesk IT</p>
+    </header>
+
+    <main>
+      <form class="search-row" id="form-single">
+        <div class="search-wrap">
+          <span class="prefix">@</span>
+          <input id="input-single"
+                 type="search"
+                 placeholder="Enter GitHub username…"
+                 autocomplete="off"
+                 spellcheck="false"
+                 required />
+        </div>
+        <button type="submit" class="btn">Detect</button>
+      </form>
+
+      <div class="status" id="status-single"></div>
+
+      <div class="profile-card" id="card-single">
+        <div class="card-top">
+          <img class="avatar" id="s-avatar" src="" alt="User avatar" onerror="this.src='https://via.placeholder.com/80'" />
+          <div class="card-info">
+            <div class="card-name" id="s-name">—</div>
+            <div class="card-login" id="s-login">—</div>
+            <div class="card-bio" id="s-bio">—</div>
+            <div class="card-meta">
+              <span>Followers <span class="val" id="s-followers">—</span></span>
+              <span>Following <span class="val" id="s-following">—</span></span>
+              <span>Repos <span class="val" id="s-repos">—</span></span>
+              <span>Joined <span class="val" id="s-joined">—</span></span>
+            </div>
+            <a class="profile-link" id="s-url" href="#" target="_blank" rel="noopener noreferrer">
+              ↗ View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="repos-section">
+          <h2 class="repos-title">// Latest Repositories</h2>
+          <div id="s-repos-list">
+            <p class="empty">No data yet. Search a user.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
